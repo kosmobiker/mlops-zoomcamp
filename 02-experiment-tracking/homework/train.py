@@ -1,7 +1,8 @@
 import argparse
 import os
 import pickle
-
+import mlflow
+from datetime import datetime
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
@@ -32,5 +33,12 @@ if __name__ == '__main__':
         help="the location where the processed NYC taxi trip data was saved."
     )
     args = parser.parse_args()
-
-    run(args.data_path)
+    
+    ts = datetime.now()
+    mlflow.set_tracking_uri('http://localhost:5000')
+    mlflow.set_experiment(f"mlops_zoomcamp_{ts}")
+    client = mlflow.client.MlflowClient()
+    mlflow.sklearn.autolog()
+    with mlflow.start_run():
+        run(args.data_path)
+    print('FInished without errors')
