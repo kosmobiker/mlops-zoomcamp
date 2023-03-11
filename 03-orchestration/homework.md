@@ -161,7 +161,7 @@ What is the Cron expression to run a flow at 9 AM every 15th of the month?
 
 * `* * 15 9 0`
 * `9 15 * * *`
-* `0 9 15 * *`
+* <span style="color:red">**`0 9 15 * *`**</span>
 * `0 15 9 1 *`
 
 Hint: there are many Cron to English tools. Try looking for one to help you.
@@ -175,7 +175,7 @@ View the deployment in the UI. When first loading, we may not see that many flow
 
 How many flow runs are scheduled by Prefect in advance? You should not be counting manually. There is a number of upcoming runs on the top right of the dashboard.
 
-* 0
+* <span style="color:red">**0**</span>
 * 3
 * 10
 * 25
@@ -196,7 +196,7 @@ For example,
 What is the command to view the available work-queues?
 
 * `prefect work-queue inspect`
-* `prefect work-queue ls`
+* <span style="color:red">**prefect work-queue ls**</span>
 * `prefect work-queue preview`
 * `prefect work-queue list`
 

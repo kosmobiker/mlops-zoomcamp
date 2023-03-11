@@ -9,6 +9,10 @@ from dateutil.relativedelta import relativedelta
 import mlflow
 import pickle
 from prefect import flow, task, get_run_logger
+from prefect.deployments import Deployment
+from prefect.server.schemas.schedules import CronSchedule
+
+
 
 
 @task
@@ -75,7 +79,7 @@ def get_paths(date=None):
     return f"../data/fhv_tripdata_{two_m_ago.strftime('%Y-%m')}.parquet", f"../data/fhv_tripdata_{one_m_ago.strftime('%Y-%m')}.parquet"
         
 
-@flow
+@flow(log_prints=True)
 def main(date=None):
     mlflow.set_tracking_uri("http://localhost:5000")
     mlflow.set_experiment("prefect-nyc-taxi-experiment")
@@ -103,3 +107,14 @@ def main(date=None):
     mlflow.sklearn.log_model(lr, "test_model_prefect")
 
 main(date="2021-08-15")
+
+deployment = Deployment.build_from_flow(
+    flow=main,
+    name="mlops-zoomcamp-deployment",
+    schedule=(CronSchedule(cron="0 9 15 * *", timezone="Europe/Warsaw")),
+    version=1, 
+    work_queue_name="vlad-prefect-demo",
+    tags=['flow', 'mega tag']
+)
+
+deployment.apply()
