@@ -98,7 +98,7 @@ Run the script for March 2021.
 What's the mean predicted duration? 
 
 * 11.29
-* <span style="color:blue">**19M**</span>
+* <span style="color:blue">**16.29**</span>
 * 21.29
 * 26.29
 
