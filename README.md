@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=3T5kUA3eWWc&list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK" target="_blank">
-    <img src="images/banner.png">
+    <img src="images/IMG_20230323_134059_927.png">
   </a>
 </p>
 
@@ -25,7 +25,7 @@ Our MLOps Zoomcamp course
 
 ### 2023 Cohort
 
-* **Start**: 12 May 2023 (Friday) at 17:00 CET
+* **Start**: 15 May 2023 (Monday) at 17:00 CET
 * **Registration link**: https://airtable.com/shrCb8y6eTbPKwSTL
 * Subscribe to our [public Google Calendar](https://calendar.google.com/calendar/?cid=M3Jzbmg0ZDA2aHVsY2M1ZjcyNDJtODNyMTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) (it works from Desktop only)
 
@@ -49,7 +49,7 @@ can take the course at your own pace
 
 ### Objective
 
-Teach practical aspects of productionizing ML services — from collecting requirements to model deployment and monitoring.
+Teach practical aspects of productionizing ML services — from training and experimenting to model deployment and monitoring.
 
 ### Target audience
 
@@ -152,25 +152,11 @@ To make discussions in Slack more organized:
 [More details](07-project/)
 
 
-### Module 7: Processes
-
-* CRISP-DM, CRISP-ML
-* ML Canvas
-* Data Landscape canvas
-* MLOps Stack Canvas
-* Documentation practices in ML projects (Model Cards Toolkit)
-
-(In October)
-
-
-
 
 ## Instructors
 
-- Larysa Visengeriyeva
 - Cristian Martinez
-- Kevin Kho
-- Theofilos Papapanagiotou 
+- Jeff Hale 
 - Alexey Grigorev
 - Emeli Dral
 - Sejal Vaidya
@@ -234,15 +220,11 @@ Thanks to the course sponsors for making it possible to create this course
 </p>
 
 
-
-Thanks to our friends for spreading the word about the course
-
 <p align="center">
-  <a href="https://dphi.tech/">
-    <img height="75" src="https://datatalks.club/images/partners/dphi.png">
-  </a>
-  <a href="https://www.confetti.ai/">
-    <img height="75" src="https://datatalks.club/images/partners/confetti.png">
+  <a href="https://wandb.ai/">
+    <img height="100" src="https://datatalks.club/images/partners/wandb-abb.svg">
   </a>
 </p>
+
+
 
