@@ -16,7 +16,7 @@ Run this notebook for the February 2021 FVH data.
 What's the mean predicted duration for this dataset?
 
 * 11.19
-* 16.19
+* <span style="color:blue">**16.19**</span>
 * 21.19
 * 26.19
 
@@ -47,7 +47,7 @@ df_result.to_parquet(
 What's the size of the output file?
 
 * 9M
-* 19M
+* <span style="color:blue">**19M**</span>
 * 29M
 * 39M
 
@@ -60,6 +60,15 @@ dtypes of the columns and use pyarrow, not fastparquet.
 Now let's turn the notebook into a script. 
 
 Which command you need to execute for that?
+
+To convert a Jupyter notebook (.ipynb) file into a script file (e.g., .py), you can use the `nbconvert` command-line tool provided by Jupyter.
+
+Example:
+
+```bash
+jupyter nbconvert --to script example_notebook.ipynb --output my_homework_script
+```
+
 
 
 ## Q4. Virtual environment
@@ -75,6 +84,9 @@ dependencies we use for the virtual env.
 
 What's the first hash for the Scikit-Learn dependency?
 
+```bash
+pipenv install <package-name>
+```
 
 ## Q5. Parametrize the script
 
@@ -86,7 +98,7 @@ Run the script for March 2021.
 What's the mean predicted duration? 
 
 * 11.29
-* 16.29
+* <span style="color:blue">**19M**</span>
 * 21.29
 * 26.29
 
@@ -130,7 +142,7 @@ Now run the script with docker. What's the mean predicted duration
 for April 2021? 
 
 
-* 9.96
+* <span style="color:blue">**9.96**</span>
 * 16.55
 * 25.96
 * 36.55

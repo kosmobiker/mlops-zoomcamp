@@ -41,4 +41,4 @@ if __name__ == '__main__':
     mlflow.sklearn.autolog()
     with mlflow.start_run():
         run(args.data_path)
-    print('FInished without errors')
+    print('Finished without errors')
